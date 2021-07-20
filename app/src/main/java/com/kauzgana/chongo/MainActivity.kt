@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
 
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-        binding.buttonName.setOnClickListener{
+       /* binding.buttonName.setOnClickListener{
             binding.user = userOne
-        }
+        }*/
     }
 }
