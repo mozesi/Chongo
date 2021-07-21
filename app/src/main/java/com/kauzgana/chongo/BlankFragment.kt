@@ -18,10 +18,10 @@ class BlankFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val bindingObj : FragmentBlankBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_blank,container,false)
-        bindingObj.cButton.setOnClickListener {
+        bindingObj.cButton.setOnClickListener (
                // view: View -> view.findNavController().navigate(R.id.action_blankFragment_to_blankFragment2)
               Navigation.createNavigateOnClickListener(R.id.action_blankFragment_to_blankFragment2)
-        }
+        )
         return bindingObj.root
     }
 
